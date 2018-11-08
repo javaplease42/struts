@@ -21,7 +21,8 @@ public class Application {
 
 
     @Bean
-    public FilterRegistrationBean filterDispatcher() {
+    public FilterRegistrationBean filterDispatcher()
+    {
         return buildFilterRegistration(0, new FilterDispatcher());
     }
 
@@ -32,6 +33,7 @@ public class Application {
 
     @Bean
     public FilterRegistrationBean sitemeshPageFilter() {
+
         return buildFilterRegistration(2, new PageFilter());
     }
 

@@ -26,7 +26,8 @@ public class AddUser {
 
     private final UserService service;
 
-    public AddUser(UserService service) {
+    public AddUser(
+            UserService service) {
         this.service = service;
     }
 
